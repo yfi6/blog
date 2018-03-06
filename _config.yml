@@ -1,14 +1,14 @@
 # ----------- CONFIGURABLE START -----------
-title:            "LiberXue|FullStack|独立开发者|jekyll blog|GitHub blog"
-description:      "Full Stack独立开发者|欢迎来到 LiberXue「角落」侃侃理想、谈谈人生、敲敲代码。"
-url:              https://liberxue.github.io # 域名
-signoff:          "LiberXue" # Your name
-facebook_appid:   #liberxue
+title:            "zheng10160|FullStack|独立开发者|jekyll blog|GitHub blog"
+description:      "Full Stack独立开发者|欢迎来到 小政同志「角落」侃侃理想、谈谈人生、敲敲代码。"
+url:              https://zheng10160.github.io # 域名
+signoff:          "zheng10160" # Your name
+facebook_appid:   #zheng
 google_analytics: UA-101222464-1
 share:            true 
 # 分页
 paginate: 15
-paginate_path: "liberxuepage:num"
+paginate_path: "zheng:num"
 gems: [jekyll-paginate]
 links:
   - name:         首页
@@ -17,9 +17,9 @@ links:
   - name:         书籍
     url:          /book
     external:     false
-  - name:         旅游
-    url:          /road
-    external:     false
+  #- name:         旅游
+  #  url:          /road
+   # external:     false
   - name:         归档
     url:          /archives
     external:     false
