@@ -1,0 +1,49 @@
+---
+layout: blog
+istop: true
+title: "liunx 安装jekyll"
+background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-16/38390376.jpg
+date:  2018-03-15
+category: jekyll
+tags:
+- jekyll
+---
+
+##安装 Ruby
+````
+CentOS 6 自带的 Ruby 版本太低，因此需要使用 rvm 安装较新版本的 Ruby。
+安装 rvm:
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable
+source /etc/profile.d/rvm.sh
+````
+##安装 ruby 2.2.1:
+````
+sudo yum install libyaml
+rvm install 2.2.1
+
+设为默认版本:
+rvm use 2.2.1 --default
+````
+##安装 Nodejs
+````
+Jekyll 依赖 JavaScript 运行时库，需要安装 Nodejs:
+sudo rpm -ivh http://mirrors.zju.edu.cn/epel/6/i386/epel-release-6-8.noarch.rpm
+sudo yum update
+sudo yum install nodejs
+````
+##安装 Jekyll
+````
+首先修改 gem 源，以加快下载速度:
+gem sources --remove https://rubygems.org/
+gem sources -a http://mirrors.ustc.edu.cn/rubygems/
+
+然后安装:
+gem install jekyll
+
+测试
+运行下面的命令测试 Jekyll 能否正常工作:
+jekyll new blog
+cd blog
+jekyll serve --host 0.0.0.0
+````
