@@ -1,17 +1,17 @@
 ---
 layout: blog
-istop: true
 title: "正则"
-background-image: 
-date:  2017-110-23
+background-image: http://121.43.158.69/img/2.jpg 
+date:  2017-11-23
 category: js
 tags:
--正则
+- 正则
 ---
 
 常用的正则表达式验证及函数大全都在这里了，像身份证验证啊、手机号码验证啊、数字验证啊、Email验证，找找看吧。
 /* 表单验证使用实例！  */
 //获取Request notnull
+````
 function isRequestNotNull(obj) {
     obj = $.trim(obj);
     if (obj.length == 0 || obj == null || obj == undefined) {
@@ -913,3 +913,4 @@ function tipCss(obj, Validatemsg) {
 function docBubbleremove() {
     $('#message').slideUp(300);
 }
+````
